@@ -1,5 +1,9 @@
-.header,.main,.footer {
-  border:1px solid red
+@import "core/reset";
+
+.header,
+.main,
+.footer {
+  border: 1px solid red;
 }
 
 * {
@@ -11,44 +15,44 @@
 @font-face {
   font-family: Circular;
   src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff2")
-    format('woff2'),
+      format("woff2"),
     url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff")
-    format('woff');
+      format("woff");
   font-weight: 300;
-  font-style:normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: Circular;
-  src: url('https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff2')
-    format('woff2'),
-    url('https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff')
-    format('woff');
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff2")
+      format("woff2"),
+    url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff")
+      format("woff");
   font-weight: 900;
   font-style: normal;
 }
 
 :root {
   /*COLORS*/
-  --primary-color:black;
+  --primary-color: black;
   --secondary-color: #4bb84a;
-  --light-color:white;
-  --tertiary-color:#0691ff;
+  --light-color: white;
+  --tertiary-color: #0691ff;
   /*FONTS*/
   --primary-font: Circular, Arial, Helvetica, sans-serif;
 }
 
 html {
   font-family: var(--primary-font);
-  font-size: 16px
+  font-size: 16px;
 }
 
 .wrapper {
-  max-width:1200px;
-  margin:auto;
-  width:100%;
-  border:1px solid green;
-  padding: 15px
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  border: 1px solid green;
+  padding: 15px;
 }
 
 /* HEADER */
@@ -66,40 +70,40 @@ html {
 
 .header-logo {
   display: inline-block;
-  width:115px;
+  width: 115px;
 }
 
 .header-logo img {
-  width: 100%
+  width: 100%;
 }
 
 .header-mobile-button {
-  display:block;
-  background-image: url('../images/menu-icon.png');
-  background-size:100%;
+  display: block;
+  background-image: url("../images/menu-icon.png");
+  background-size: 100%;
   width: 20px;
-  height: 20px
+  height: 20px;
 }
 
 .header-menu {
   list-style-type: none;
   padding: 0px;
   color: var(--light-color);
-  display:none;
+  display: none;
 }
 
 .header-menu li {
-  display:inline-block;
+  display: inline-block;
 }
 
-.header-menu li a{
+.header-menu li a {
   padding: 15px;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .header-menu li:nth-child(3):after {
-  content:"|"
-} 
+  content: "|";
+}
 
 /* HERO */
 
@@ -112,28 +116,20 @@ html {
   height: 50vh;
 }
 
-
-
-@media all and (min-width:768px) {
+@media all and (min-width: 768px) {
   .header-menu {
-    display:block;
+    display: block;
   }
 
   .header-mobile-button {
-    display:none;
+    display: none;
   }
 
   .hero .wrapper {
-    background: url('../images/premium_dancer.png') no-repeat;
+    background: url("../images/premium_dancer.png") no-repeat;
     background-position: right top;
   }
 }
 
-@media all and (min-width:1200px) {
-
-
-  
+@media all and (min-width: 1200px) {
 }
-
-
-
